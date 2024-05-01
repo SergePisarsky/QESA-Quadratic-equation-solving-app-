@@ -336,8 +336,8 @@ String в тип Float*/
         jTextField5.setText(formattedX1);
         jTextField6.setText(formattedX1);
 
-        jTextField5.setText(String.valueOf(x1));//старое выражение
-        jTextField6.setText(String.valueOf(x2));//старое выражение
+        //jTextField5.setText(String.valueOf(x1));//старое выражение
+        //jTextField6.setText(String.valueOf(x2));//старое выражение
         }
     }           
 //действия при нажатии кнопки Отмена    
