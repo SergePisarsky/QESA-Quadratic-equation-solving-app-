@@ -1,37 +1,3 @@
 # QESA-Quadratic-equation-solving-app
-QESA will help schoolchildren quickly and easily check the correct solution of algebraic quadratic equations
-
-Основной Java код:
-package gdiclab.qesa;
-import static java.lang.Math.*;
-
-public class Qesa {
-
-public static void main(String[] args) {
-	float a, b, c;
-    double D, x1, x2;
-        
-//вычисление дискриминанта D
-    D = (b*b-4*a*c); 
-  System.out.println("D = "+D);    
-
-//если D>0 определяем корни
-        if  (D>0){
-        x1 = (-b - sqrt(D))/(2*a);
-        x2 = (-b + sqrt(D))/(2*a);
-		System.out.println("x1 = "+x1);
-        System.out.println("x2 = "+x2);
-        }
-
-//если D<0 выводим сообщение в текст.поле об отсутствии действ.корней  
-        else if(D<0){
-        System.out.println("The equation has no actual roots");
-        }
-//если D=0 определяем корни х1=х2 
-        else{
-        x1=-b/(2*a);
-        x2=x1;
-		System.out.println("x1 = x2 = "+x1);
-		}
-	}
-}
+QESA will help schoolchildren quickly and easily check the correct solution of algebraic quadratic equations.
+The GUI of the application has 2 panels. In the input panel there are 3 windows for entering values of equation coefficients, 2 buttons - Calculate and Cancel. In the results output panel there are 4 fields for outputting values: discriminant D, roots x1 and x2, as well as a text field for outputting a text message that there are no valid roots of the equation, and a New task button. In the lower right part of the window there is an Exit button to terminate the application. All buttons have sound accompaniment, and the Calculation button has 3 different melodies depending on the calculation results for cases D>0, D<0 and D=0). Different font colours are used when entering coefficients and displaying results. The text is traditionally located on the right side of the text fields. Such an app will surely be interesting for schoolchildren and not only for them.
