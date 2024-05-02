@@ -356,13 +356,13 @@ public class WQesa extends JFrame{
         jTextField6.setText(formattedX2);
         //jTextField6.setText(String.valueOf(x2));//старое выражение 
 //озвучка для D>0
-		playSound("C:/Users/Serge/Documents/NetBeansProjects/WQesa/src/main/java/gdiclab/wqesa/Sounds/Diplex.wav");
+		playSound("Diplex.wav");
 		}
 //если D<0 сообщает в текст.поле об отсутствии действ.корней  
         else if(D<0){
         jTextField7.setText("Действительные корни отсутствуют");
 //озвучка для D<0      
-        playSound("C:/Users/Serge/Documents/NetBeansProjects/WQesa/src/main/java/gdiclab/wqesa/Sounds/Misc_UFO_anim.wav");
+        playSound("Misc_UFO_anim.wav");
 		}
 //если D=0 определяет корни х1=х2 
         else{
@@ -381,7 +381,7 @@ public class WQesa extends JFrame{
         //jTextField5.setText(String.valueOf(x1));//старое выражение
         //jTextField6.setText(String.valueOf(x2));//старое выражение
 //озвучка для D=0      
-        playSound("C:/Users/Serge/Documents/NetBeansProjects/WQesa/src/main/java/gdiclab/wqesa/Sounds/minimal-pop-click-ui-15.wav");      
+        playSound("minimal-pop-click-ui-15.wav");      
 		}
     }           
 //действия при нажатии кнопки Отмена    
@@ -395,7 +395,7 @@ public class WQesa extends JFrame{
         jTextField6.setText("");
         jTextField7.setText("");
 //озвучка кнопки Отмена
-        playSound("C:/Users/Serge/Documents/NetBeansProjects/WQesa/src/main/java/gdiclab/wqesa/Sounds/Misc_StartLevel.wav");
+        playSound("Misc_StartLevel.wav");
 		}                                        
 //действия при нажатии кнопки Новая задача
     private void jButton3ActionPerformed(ActionEvent evt) {                                         
@@ -408,12 +408,12 @@ public class WQesa extends JFrame{
         jTextField6.setText("");
         jTextField7.setText("");
 //озвучка кнопки Новая задача
-        playSound("C:/Users/Serge/Documents/NetBeansProjects/WQesa/src/main/java/gdiclab/wqesa/Sounds/Misc_Checkpoint.wav");
+        playSound("Misc_Checkpoint.wav");
 		}                                        
 //действия при нажатии кнопки Выход (выход из приложения)
     private void jButton4ActionPerformed(ActionEvent evt) {
 //озвучка кнопки Выход
-        playSound("C:/Users/Serge/Documents/NetBeansProjects/WQesa/src/main/java/gdiclab/wqesa/Sounds/Misc_Fall.wav");
+        playSound("Misc_Fall.wav");
 		try {
 //задержка выполнения команды в 3 сек
         Thread.sleep(3000); // Задержка в миллисекундах (3 секунды)
